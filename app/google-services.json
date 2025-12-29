@@ -1,0 +1,29 @@
+{
+    "project_info": {
+        "project_number": "40883333420",
+        "project_id": "app1-34500",
+        "storage_bucket": "app1-34500.firebasestorage.app"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:40883333420:android:22835203fda9bac3656489",
+                "android_client_info": {
+                    "package_name": "com.healthcare.medify"
+                }
+            },
+            "oauth_client": [],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyA-wjY_dCFPJrUxgWVBxYkbaPuuaqljVOA"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": []
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}
