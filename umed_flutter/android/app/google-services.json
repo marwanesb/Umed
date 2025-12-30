@@ -1,0 +1,29 @@
+{
+    "project_info": {
+        "project_number": "471973147966",
+        "project_id": "appflutter-592bc",
+        "storage_bucket": "appflutter-592bc.firebasestorage.app"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:471973147966:android:7695e87a0fc7406907e86f",
+                "android_client_info": {
+                    "package_name": "com.healthcare.medify"
+                }
+            },
+            "oauth_client": [],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyCBdHH3YOjeyqf28rqdjWSgkdSqsAeSrh8"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": []
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}
