@@ -1,130 +1,70 @@
+# Umed (Project Medify) 🩺
 
-# 📱 Ez Health – Android Mobile App
+**Umed** is a comprehensive, AI-driven healthcare companion designed to modernize the patient experience. Originally developed as a native Android app, this repository now hosts the high-performance **Flutter** migration, providing a unified medical platform for both Mobile and Web.
 
+## 🚀 Key Features
 
----
+### 📸 AI Medical Report Scanner
+Tired of medical jargon? Umed uses **Google ML Kit (OCR)** and **GPT-4o** to scan physical medical reports and translate complex values into simple, understandable insights for patients.
 
-Ez Health is a smart Android application that empowers users to manage their health records, schedule appointments, receive nutrition advice, and access real-time health support — all in one place. The app integrates Firebase, AI recommendations, TensorFlow, and a chatbot for a modern, intelligent healthcare experience.
+### 💬 24/7 AI Health Chatbot
+A virtual assistant powered by Large Language Models to answer health-related queries, check symptoms, and provide instant medical guidance anytime, anywhere.
 
----
+### 📅 Smart Appointment Management
+Integrated booking system for seamless scheduling with specialized healthcare professionals.
 
-## 🚀 Features
-
-- 📄 Upload and view personal health reports
-- 🧠 AI-powered health recommendations
-- 🤖 Integrated chatbot using Google Gemini for health queries
-- 📅 Schedule and track appointments
-- ⚖️ Calculate BMI and monitor health goals
-- 🆘 Quick emergency call button
-- 🔒 Firebase Authentication & Realtime Sync
-- ☁️ Cloud Storage support for files (images & PDFs)
+### ⚖️ Health Tools & Resources
+- **BMI Calculator:** Track your health metrics instantly.
+- **Article Hub:** Curated medical articles to promote preventative care.
 
 ---
 
-## 🧠 AI Modules
+## 🛠 Technical Stack
 
-| Module | Description |
-|--------|-------------|
-| **Chatbot** | Built using Google Gemini Kit to provide conversational health support and general queries |
-| **TensorFlow** | Used for health report image analysis and classification |
-| **Nutritionist Model** | Python-based backend model (Streamlit + pandas) generates diet plans |
-
----
-
-
----
-
-## 🛠 Tech Stack
-
-| Technology                                                                                                               | Description                                    |
-| ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------- |
-| ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge\&logo=kotlin\&logoColor=white)                  | Main language for Android development          |
-| ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge\&logo=java\&logoColor=white)                        | Used in some legacy modules                    |
-| ![XML](https://img.shields.io/badge/XML-E44D26?style=for-the-badge\&logo=xml\&logoColor=white)                           | UI Layouts                                     |
-| ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge\&logo=firebase\&logoColor=black)            | Authentication, Realtime Database, and Storage |
-| ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge\&logo=tensorflow\&logoColor=white)      | Report image analysis                          |
-| ![Google Gemini](https://img.shields.io/badge/Gemini%20Chatbot-4285F4?style=for-the-badge\&logo=google\&logoColor=white) | AI Chatbot integration                         |
-
----
-
-## 📸 Screenshots
-
-| Login & Home                                         | Report Upload                                          | Chatbot                                                  | Recommendations                                                          |
-| ---------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![Login](https://raw.githubusercontent.com/MTalhaofc/Ez-Health-Android-App/refs/heads/main/ChatGPT%20Image%20Jun%2015%2C%202025%2C%2003_20_35%20PM.png) | ![Upload](https://raw.githubusercontent.com/MTalhaofc/Ez-Health-Android-App/refs/heads/main/WhatsApp%20Image%202025-06-15%20at%202.41.45%20PM.jpeg) | ![Chatbot](https://raw.githubusercontent.com/MTalhaofc/Ez-Health-Android-App/refs/heads/main/WhatsApp%20Image%202025-06-15%20at%202.41.44%20PM.jpeg) | ![Recommendations](https://raw.githubusercontent.com/MTalhaofc/Ez-Health-Android-App/refs/heads/main/WhatsApp%20Image%202025-06-15%20at%202.41.48%20PM.jpeg) |
+- **Frontend:** [Flutter](https://flutter.dev/) (3.x)
+- **Backend:** [Firebase Realtime Database](https://firebase.google.com/products/realtime-database) (Region: Europe-West1)
+- **Authentication:** [Firebase Auth](https://firebase.google.com/products/auth)
+- **AI/ML Engine:**
+  - [Google ML Kit](https://developers.google.com/ml-kit) (On-device OCR)
+  - OpenAI **GPT-4o** (via AIML API)
+- **Design:** Modern "Glassmorphism" UI with [Lottie](https://lottiefiles.com/) animations.
 
 ---
 
 ## 📂 Project Structure
 
-```bash
-EzHealthApp/
-├── app/
-│   ├── java/com/ezhealth/    # App logic in Kotlin
-│   ├── res/layout/           # UI screens (XML)
-│   └── AndroidManifest.xml
-├── firebase/                 # Firebase services
-├── tensorflow/               # TensorFlow model loading
-├── build.gradle
-└── README.md
-```
+- `umed_flutter/`: The modern Flutter migration (Mobile & Web).
+- `android_native/`: The legacy Kotlin implementation for historical reference.
 
 ---
 
-## ⚙️ Getting Started
+## 🔧 Getting Started
 
-### 1️⃣ Clone the Repository
+### Prerequisites
+- Flutter SDK installed.
+- Firebase project configured with a Realtime Database.
 
-```
-git clone https://github.com/your-username/ez-health-app.git
-cd ez-health-app
-```
-
-### 2️⃣ Open in Android Studio
-```
-* Open the project
-* Sync Gradle dependencies
-```
-### 3️⃣ Firebase Setup
-```
-* Add your `google-services.json` to `/app`
-* Enable Firebase Auth, Storage, and Realtime DB in your console
-```
-### 4️⃣ TensorFlow Setup
-```
-* Add your TFLite model under `/assets` folder
-* Load and run inference using Android TFLite Interpreter
-```
-### 5️⃣ Run the App
-
-```
-Run ▶️ in Android Studio
-```
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/marwanesb/Umed.git
+   ```
+2. Navigate to the Flutter directory:
+   ```bash
+   cd umed_flutter
+   ```
+3. Get dependencies:
+   ```bash
+   flutter pub get
+   ```
+4. Run the app:
+   ```bash
+   flutter run
+   ```
 
 ---
 
-## 📄 License
+## 👨‍💻 Author
+**Marwane Sabir**
 
-This project is licensed under the **MIT License**.
-
----
-
-## 📬 Contact
-
-For any queries, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/mtalhaofc/)
-
----
-
-## ⭐ Support
-
-If you found this project useful or interesting, please consider giving it a ⭐ star and following me on GitHub for more cool projects!
-
-[![GitHub Follow](https://img.shields.io/github/followers/MTalhaofc?label=Follow&style=social)](https://github.com/MTalhaofc)
-
----
-
-> ⚡ **Ez Health – Personalized health support in your pocket.**
-
-
-
-
+*"Bridging medical technology and human understanding."*
