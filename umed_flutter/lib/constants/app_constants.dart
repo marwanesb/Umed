@@ -2,7 +2,7 @@ class AppConstants {
   static const String appName = "Umed";
   
   // AI API Credentials
-  static const String openaiApiKey = "f2c1a834041e4f84a07886037bfbc1b0";
+  static const String openaiApiKey = "e90134c2b90a47cf8ce1b1f70bd345a6";
   static const String openaiBaseUrl = "https://api.aimlapi.com/v1";
   static const String openaiModel = "gpt-4o";
   
