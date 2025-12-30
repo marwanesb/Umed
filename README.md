@@ -19,6 +19,15 @@ Integrated booking system for seamless scheduling with specialized healthcare pr
 
 ---
 
+## 📸 Screenshots
+
+| Login & Dashboard | AI Chat & Appointments | BMI Calculator |
+| :---: | :---: | :---: |
+| <img src="umed_flutter/assets/screenshots/login_screen.png" width="200"> <br> **Login** | <img src="umed_flutter/assets/screenshots/ai_chat.png" width="200"> <br> **AI Assistant** | <img src="umed_flutter/assets/screenshots/bmi_calculator.png" width="200"> <br> **BMI Tracker** |
+| <img src="umed_flutter/assets/screenshots/dashboard.png" width="200"> <br> **Home Screen** | <img src="umed_flutter/assets/screenshots/book_appointment.png" width="200"> <br> **Booking** | |
+
+---
+
 ## 🛠 Technical Stack
 
 - **Frontend:** [Flutter](https://flutter.dev/) (3.x)
